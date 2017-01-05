@@ -1,0 +1,242 @@
+Group {
+	font: 12px Verdana, "Lucida Sans", Arial, Helvetica, sans-serif;
+	color: #4a4a4a;
+	background-color: #ffffff;
+	border: none;
+}
+
+Group-Frame {
+	margin: 20px 0px 0px 0px;
+	padding: 8px 0px 0px 0px;
+	border: 1px solid #bdbdbd;
+	border-radius: 2px;
+}
+
+Group-Label {
+	padding: 2px 5px 2px 5px;
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	color: #4a4a4a;
+	margin: 10px 10px 10px 10px;
+	text-shadow: none;
+}
+
+/**change  application layout backagound **/
+Composite.applayout {
+	background-color: #F5F5F5;
+}
+
+
+CTabFolder {
+	border-color: #bdbdbd;
+	border-radius: 1px;
+}
+
+
+CTabItem {
+	color: #4a4a4a;
+	padding: 6px 15px;
+	spacing: 10px;
+	text-shadow: none;
+}
+
+CTabItem:selected {
+	color: #4a4a4a;
+	background-color: #ffffff;
+	background-image: none;
+	text-shadow: 0 1px 0 #f0f0f0;
+}
+
+ExpandBar.menurenderer {
+	color: #ffffff;
+    
+}
+
+ExpandItem-Header.MenuHeaderTest {
+	
+	background-image: gradient(linear, left top, left bottom, from(#9984B6),
+		to(#9984B6) );
+}
+ExpandItem-Header.MenuHeaderDev {
+	
+	background-image: gradient(linear, left top, left bottom, from(#D07876),
+		to(#D07876) );
+}
+ExpandItem-Header.MenuHeaderProd {
+	
+	background-image: gradient(linear, left top, left bottom, from(#4D70B8),
+		to(#4D70B8) );
+}
+
+ExpandItem-Header.MenuHeaderSim {
+    
+    background-image: gradient(linear, left top, left bottom, from(#76933C),
+        to(#76933C) );
+}
+
+ExpandItem-Button {
+ background-image:none
+}
+
+ExpandItem-Button:hover {
+ background-image:none
+}
+
+ExpandItem-Button:expanded {
+ background-image:none
+}
+
+ExpandItem-Button:expanded:hover {
+ background-image:none
+}
+
+
+
+   
+Composite.workview {
+	background-color: #ffffff;
+}
+Link.workview {
+	background-color: #ffffff;
+}
+Link.activeweek {
+	background-color: #c4c4c4;
+}
+Button[PUSH].workview {
+	background-image: gradient(linear, left top, left bottom, from(#e4e4e4),
+		to(#e4e4e4) );
+}
+
+.WORKWEEK_DAY
+{
+	font: 11px Verdana, "Lucida Sans", Arial, Helvetica, sans-serif;
+	color: #4a4a4a;
+}
+
+
+DateTime-Calendar-Navbar {
+	border: none;
+	border-radius: 0;
+	background-color: #4D70B8;
+	background-image:gradient(linear, left top, left bottom, from(#4D70B8),
+		to(#4D70B8) );
+	color: white;
+	font: 11px Verdana, "Lucida Sans", Arial, Helvetica, sans-serif;
+	text-shadow: none;
+}
+
+Composite.banner {
+   background-color: #ffffff;
+   padding: 8px 8px 8px 8px;
+   border: solid 1px #a4a4a4;
+   border-radius: 3px;
+}  
+
+Composite.login {
+	background-color: #f0f2f5;
+	padding: 8px 8px 8px 8px;
+	border: solid 1px #a4a4a4;
+	border-radius: 3px;
+}
+
+Button[PUSH]:hover.login
+	{
+	
+	background-image: gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+}
+Button[PUSH].login
+	{
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	border: solid 1px #da7c0c;
+	color: #fef4e9;
+	background-image: gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+} 
+
+Button[PUSH].entry
+{
+   text-shadow: 0 1px 1px rgba(0,0,0,.3)  ;
+   border: solid 1px #61B329;
+   color: #FFFFFF;
+   background-image: gradient(linear, left top, left bottom, from(#A6D785), to(#61B329));
+}
+
+Button[PUSH].save
+{
+   text-shadow: 0 1px 1px rgba(0,0,0,.3)  ;
+   border: solid 1px #42588B;
+   color: #FFFFFF;
+   background-image: gradient(linear, left top, left bottom, from(#A1AECB), to(#42588B));
+}
+
+
+
+Text[BORDER],Text[MULTI][BORDER]
+{
+border: 1px solid #aaaaaa  ;
+border-radius: 0;
+box-shadow: none;
+}
+
+Text[BORDER]:focused,Text[MULTI][BORDER]:focused
+{
+   border: 1px solid #4f7cb1  ;
+   box-shadow: 0 0 5px #4f7cb1  ;
+}
+
+Text:disabled,Text:read-only,Text[MULTI]:disabled,Text[MULTI]:read-only
+{
+   border: 1px solid #aaaaaa  ;
+   box-shadow: none;
+   background-color: #e4e4e4  ;
+}
+
+Combo,Combo[BORDER]
+{
+border: 1px solid #aaaaaa  ;
+border-radius: 0 2px 2px 0;
+box-shadow: none;
+}
+
+Combo:focused,Combo[BORDER]:focused
+{
+border: 1px solid #4f7cb1;
+box-shadow: 0 0 5px #4f7cb1  ;
+}
+
+
+Spinner[BORDER] {
+   border: 1px solid #aaaaaa;
+   border-radius: 0 2px 2px 0;
+   box-shadow: none;
+}
+
+Spinner[BORDER]:focused {
+   border: 1px solid #4f7cb1;
+   box-shadow: 0 0 5px #4f7cb1;
+}
+
+Spinner-Field {
+   padding: 6px 10px 6px 10px;
+}
+
+
+
+TreeItem:hover {
+
+	text-decoration: underline;
+}
+
+
+Text[BORDER].error
+{
+	border: 1px solid #FF0000  ;
+}
+
+Combo.error, Combo[BORDER].error
+{
+   border: 1px solid #FF0000  ;
+}
+
+
+

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entirejFramework>
+    <version><![CDATA[2.2]]></version>
+    <applicationManager><![CDATA[org.entirej.applicationframework.rwt.application.EJRWTApplicationManager]]></applicationManager>
+    <applicationManagerDefinition><![CDATA[org.entirej.applicationframework.rwt.renderers.application.EJRWTApplicationDefinition]]></applicationManagerDefinition>
+    <connectionFactoryClassName><![CDATA[org.entirej.ejinvoice.database.TEMOSJbossConnectionFactory]]></connectionFactoryClassName>
+    <reusableBlocksLocation><![CDATA[org/entirej/ejinvoice/referencedblocks]]></reusableBlocksLocation>
+    <reusableLovDefinitionLocation><![CDATA[org/entirej/ejinvoice/referencedlovdefs]]></reusableLovDefinitionLocation>
+    <objectGroupDefinitionLocation><![CDATA[org/entirej/ejinvoice]]></objectGroupDefinitionLocation>
+    <translatorClassName></translatorClassName>
+    <applicationLevelParameterList>
+        <appicationLevelParameter name="USER" dataType="org.entirej.ejinvoice.forms.company.User" defaultValue=""></appicationLevelParameter>
+        <appicationLevelParameter name="email" dataType="java.lang.String" defaultValue=""></appicationLevelParameter>
+        <appicationLevelParameter name="name" dataType="java.lang.String" defaultValue=""></appicationLevelParameter>
+        <appicationLevelParameter name="USER_ID" dataType="java.lang.Integer" defaultValue=""></appicationLevelParameter>
+        <appicationLevelParameter name="COMPANY_ID" dataType="java.lang.Integer" defaultValue=""></appicationLevelParameter>
+        <appicationLevelParameter name="builtBy" dataType="java.lang.String" defaultValue="Built with EntireJ"></appicationLevelParameter>
+        <appicationLevelParameter name="DATABASE_NAME" dataType="java.lang.String" defaultValue="ej-invoice"></appicationLevelParameter>
+        <appicationLevelParameter name="dataSourceName" dataType="java.lang.String" defaultValue="ej-invoice"></appicationLevelParameter>
+        <appicationLevelParameter name="newCompanyDefaultsCompanyId" dataType="java.lang.Integer" defaultValue="369"></appicationLevelParameter>
+    </applicationLevelParameterList>
+    <applicationDefinedProperties>
+        <property name="DISPLAY_TAB_BORDER" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
+        <property name="APPLICATION_MENU" multilingual="false" propertyType="MENU_GROUP"></property>
+        <propertyGroup name="APP_MESSAGING">
+            <propertyGroup name="APP_MSG_WARNING">
+                <property name="APP_MSG_TYPE" multilingual="false" propertyType="STRING"><![CDATA[DIALOG]]></property>
+                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
+                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
+                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"></property>
+            </propertyGroup>
+            <propertyGroup name="APP_MSG_INFO">
+                <property name="APP_MSG_TYPE" multilingual="false" propertyType="STRING"><![CDATA[NOTIFICATION]]></property>
+                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
+                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
+                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
+            </propertyGroup>
+            <propertyGroup name="APP_MSG_HINT">
+                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
+                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
+                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
+            </propertyGroup>
+            <propertyGroup name="APP_MSG_ERROR">
+                <property name="APP_MSG_TYPE" multilingual="false" propertyType="STRING"><![CDATA[DIALOG]]></property>
+                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
+                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
+                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"></property>
+            </propertyGroup>
+        </propertyGroup>
+        <propertyGroup name="ACTION_GROUP">
+            <property name="KEY_DELETE" multilingual="false" propertyType="STRING"><![CDATA[CTRL+SHIFT+D]]></property>
+            <property name="KEY_LOV" multilingual="false" propertyType="STRING"><![CDATA[SHIFT+ARROW_DOWN]]></property>
+            <property name="KEY_UPDATE" multilingual="false" propertyType="STRING"><![CDATA[CTRL+SHIFT+U]]></property>
+            <property name="KEY_QUERY" multilingual="false" propertyType="STRING"><![CDATA[CTRL+SHIFT+Q]]></property>
+            <property name="KEY_INSERT" multilingual="false" propertyType="STRING"><![CDATA[CTRL+SHIFT+I]]></property>
+            <property name="KEY_REFRESH" multilingual="false" propertyType="STRING"><![CDATA[CTRL+SHIFT+R]]></property>
+        </propertyGroup>
+    </applicationDefinedProperties>
+    <packages>
+        <formsPackage name="org/entirej/ejinvoice/forms"/>
+    </packages>
+    <renderer>
+        <formRenderers>
+            <renderer name="Form" rendererClassName="org.entirej.applicationframework.rwt.renderers.form.EJRWTFormRenderer"/>
+        </formRenderers>
+        <blockRenderers>
+            <renderer name="SingleRecord" rendererClassName="org.entirej.applicationframework.rwt.renderers.blocks.EJRWTSingleRecordBlockRenderer"/>
+            <renderer name="MultiRecord" rendererClassName="org.entirej.applicationframework.rwt.renderers.blocks.EJRWTMultiRecordBlockRenderer"/>
+            <renderer name="TreeRecord" rendererClassName="org.entirej.applicationframework.rwt.renderers.blocks.EJRWTTreeRecordBlockRenderer"/>
+            <renderer name="TreeTableRecord" rendererClassName="org.entirej.applicationframework.rwt.renderers.blocks.EJRWTTreeTableRecordBlockRenderer"/>
+            <renderer name="HTMLMultiRecord" rendererClassName="org.entirej.applicationframework.rwt.renderers.html.EJRWTHtmlTableBlockRenderer"/>
+            <renderer name="WORKWEEK" rendererClassName="org.entirej.custom.renderers.WorkWeekBlockRenderer"/>
+            <renderer name="MenuRenderer" rendererClassName="org.entirej.custom.renderers.MenuRenderer"/>
+        </blockRenderers>
+        <itemRenderers>
+            <renderer name="TextItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTTextItemRenderer">
+            </renderer>
+            <renderer name="TextAreaItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTTextAreaRenderer">
+            </renderer>
+            <renderer name="NumberItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTNumberItemRenderer">
+            </renderer>
+            <renderer name="DateItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTDateItemRenderer">
+            </renderer>
+            <renderer name="DateTimeItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTDateTimeItemRenderer">
+            </renderer>
+            <renderer name="LabelItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTLabelItemRenderer">
+            </renderer>
+            <renderer name="ButtonItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTButtonItemRenderer">
+            </renderer>
+            <renderer name="ComboItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTComboItemRenderer">
+            </renderer>
+            <renderer name="RadioItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTRadioGroupItemRenderer">
+            </renderer>
+            <renderer name="CheckBoxItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTCheckBoxItemRenderer">
+            </renderer>
+            <renderer name="ImageItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTImageItemRenderer">
+            </renderer>
+            <renderer name="ListItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRWTListItemRenderer">
+            </renderer>
+        </itemRenderers>
+        <lovRenderers>
+            <renderer name="Standard" rendererClassName="org.entirej.applicationframework.rwt.renderers.lov.EJRWTStandardLovRenderer"/>
+            <renderer name="Lookup" rendererClassName="org.entirej.applicationframework.rwt.renderers.lov.EJRWTLookupFormLovRenderer"/>
+        </lovRenderers>
+        <menuRenderers>
+        </menuRenderers>
+        <appCompRenderers>
+            <renderer name="TabFormContainer" rendererClassName="org.entirej.applicationframework.rwt.application.form.containers.EJRWTTabPaneFormContainer"/>
+            <renderer name="MenuTree" rendererClassName="org.entirej.applicationframework.rwt.application.components.menu.EJRWTMenuTreeComponent"/>
+            <renderer name="FormToolBar" rendererClassName="org.entirej.applicationframework.rwt.application.form.containers.EJRWTDefaultFormContainerToolbar"/>
+            <renderer name="Banner" rendererClassName="org.entirej.applicationframework.rwt.application.components.EJRWTBanner"/>
+            <renderer name="SingleFormContainer" rendererClassName="org.entirej.applicationframework.rwt.application.form.containers.EJRWTSingleFormContainer"/>
+            <renderer name="StackedFormContainer" rendererClassName="org.entirej.applicationframework.rwt.application.form.containers.EJRWTStackedPaneFormContainer"/>
+            <renderer name="Statusbar" rendererClassName="org.entirej.applicationframework.rwt.application.components.EJRWTStatusbar"/>
+        </appCompRenderers>
+    </renderer>
+    <applicationMenus>
+        <applicationMenu name="Default" actionProcessorClassName="" default="true">
+            <leaf type="BRANCH" name="CUSTOMERS">
+                <displayName><![CDATA[Customers]]></displayName>
+                <icon></icon>
+                <leaf type="ACTION" name="OPEN_ALL_COMPANIES">
+                    <displayName><![CDATA[All]]></displayName>
+                    <actionCommand><![CDATA[OPEN_ALL_COMPANIES]]></actionCommand>
+                    <hint></hint>
+                    <icon></icon>
+                </leaf>
+                <leaf type="ACTION" name="ACTIVE_COMPANIES">
+                    <displayName><![CDATA[Active]]></displayName>
+                    <actionCommand><![CDATA[OPEN_ACTIVE_COMPANIES]]></actionCommand>
+                    <hint></hint>
+                    <icon></icon>
+                </leaf>
+            </leaf>
+            <leaf type="BRANCH" name="PROJECTS">
+                <displayName><![CDATA[Projects]]></displayName>
+                <icon><![CDATA[/icons/projects.png]]></icon>
+                <leaf type="ACTION" name="ALL_PROJECTS">
+                    <displayName><![CDATA[All]]></displayName>
+                    <actionCommand><![CDATA[OPEN_ALL_PROJECTS]]></actionCommand>
+                    <hint></hint>
+                    <icon></icon>
+                </leaf>
+                <leaf type="ACTION" name="ACTIVE_PROJECTS">
+                    <displayName><![CDATA[Active]]></displayName>
+                    <actionCommand><![CDATA[OPEN_ACTIVE_PROJECTS]]></actionCommand>
+                    <hint></hint>
+                    <icon></icon>
+                </leaf>
+                <leaf type="ACTION" name="MY_PROJECTS">
+                    <displayName><![CDATA[Mine]]></displayName>
+                    <actionCommand><![CDATA[OPEN_MY_PROJECTS]]></actionCommand>
+                    <hint></hint>
+                    <icon></icon>
+                </leaf>
+            </leaf>
+            <leaf type="BRANCH" name="TASKS">
+                <displayName><![CDATA[Tasks]]></displayName>
+                <icon><![CDATA[/icons/projectTasks.png]]></icon>
+                <leaf type="ACTION" name="ALL_PROJECT_TASKS">
+                    <displayName><![CDATA[All]]></displayName>
+                    <actionCommand><![CDATA[OPEN_ALL_TASKS]]></actionCommand>
+                    <hint></hint>
+                    <icon></icon>
+                </leaf>
+                <leaf type="ACTION" name="MY_TASKS">
+                    <displayName><![CDATA[Mine]]></displayName>
+                    <actionCommand><![CDATA[OPEN_MY_TASKS]]></actionCommand>
+                    <hint></hint>
+                    <icon></icon>
+                </leaf>
+            </leaf>
+            <leaf type="ACTION" name="TIME_TRACKING">
+                <displayName><![CDATA[Time Tracking]]></displayName>
+                <actionCommand><![CDATA[OPEN_TIME_TRACKING]]></actionCommand>
+                <hint></hint>
+                <icon><![CDATA[/icons/openhours.png]]></icon>
+            </leaf>
+        </applicationMenu>
+    </applicationMenus>
+    <applicationLayout>
+        <title><![CDATA[BiziBo]]></title>
+        <col>1</col>
+        <height>0</height>
+        <width>0</width>
+        <items>
+            <item type="COMPONENT">
+                <name></name>
+                <fill><![CDATA[BOTH]]></fill>
+                <grab><![CDATA[BOTH]]></grab>
+                <hHint>0</hHint>
+                <wHint>0</wHint>
+                <hMin>0</hMin>
+                <wMin>0</wMin>
+                <hSpan>1</hSpan>
+                <VSpan>1</VSpan>
+                <renderer><![CDATA[StackedFormContainer]]></renderer>
+                <rendererProperties>
+                </rendererProperties>
+            </item>
+            <item type="COMPONENT">
+                <name></name>
+                <fill><![CDATA[HORIZONTAL]]></fill>
+                <grab><![CDATA[HORIZONTAL]]></grab>
+                <hHint>30</hHint>
+                <wHint>0</wHint>
+                <hMin>30</hMin>
+                <wMin>0</wMin>
+                <hSpan>1</hSpan>
+                <VSpan>1</VSpan>
+                <renderer><![CDATA[Statusbar]]></renderer>
+                <rendererProperties>
+                    <propertyList name="SECTIONS">
+                        <listEntry>
+                            <property name="VISUAL_ATTRIBUTE"><![CDATA[dataBold]]></property>
+                            <property name="EXPAND_X"><![CDATA[true]]></property>
+                            <property name="ALIGNMENT"><![CDATA[LEFT]]></property>
+                            <property name="WIDTH"><![CDATA[100]]></property>
+                            <property name="PARAMETER"><![CDATA[email]]></property>
+                        </listEntry>
+                        <listEntry>
+                            <property name="VISUAL_ATTRIBUTE"><![CDATA[dataGray]]></property>
+                            <property name="EXPAND_X"><![CDATA[true]]></property>
+                            <property name="ALIGNMENT"><![CDATA[CENTER]]></property>
+                            <property name="WIDTH"><![CDATA[100]]></property>
+                            <property name="PARAMETER"><![CDATA[builtBy]]></property>
+                        </listEntry>
+                        <listEntry>
+                            <property name="VISUAL_ATTRIBUTE"><![CDATA[dataBold]]></property>
+                            <property name="EXPAND_X"><![CDATA[true]]></property>
+                            <property name="ALIGNMENT"><![CDATA[RIGHT]]></property>
+                            <property name="WIDTH"><![CDATA[100]]></property>
+                            <property name="PARAMETER"><![CDATA[name]]></property>
+                        </listEntry>
+                    </propertyList>
+                </rendererProperties>
+            </item>
+        </items>
+    </applicationLayout>
+    <visualAttributes>
+        <visualAttribute name="data">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Unspecified]]></weight>
+            <foregroundColor><![CDATA[r0g0b0]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="dataBold">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r0g0b0]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="titleLarge">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>250</fontSize>
+            <fontSizeAsPercentage>true</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r128g128b128]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="titleMedium">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>200</fontSize>
+            <fontSizeAsPercentage>true</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Unspecified]]></weight>
+            <foregroundColor><![CDATA[r128g128b128]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="titleSmall">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>150</fontSize>
+            <fontSizeAsPercentage>true</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r128g128b128]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="dataPaid">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Unspecified]]></weight>
+            <foregroundColor><![CDATA[r255g255b255]]></foregroundColor>
+            <backgroundColor><![CDATA[r0g128b0]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="dataDraft">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Unspecified]]></weight>
+            <foregroundColor><![CDATA[r255g255b255]]></foregroundColor>
+            <backgroundColor><![CDATA[r192g192b192]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="dataOverdue">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Unspecified]]></weight>
+            <foregroundColor><![CDATA[r255g255b255]]></foregroundColor>
+            <backgroundColor><![CDATA[r255g0b0]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="dataOdd">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Unspecified]]></weight>
+            <foregroundColor><![CDATA[r0g0b0]]></foregroundColor>
+            <backgroundColor><![CDATA[r246g245b247]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="tableHeader">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r255g255b255]]></foregroundColor>
+            <backgroundColor><![CDATA[r77g112b184]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="dataSmall">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>7</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Unspecified]]></weight>
+            <foregroundColor><![CDATA[r0g64b128]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="dataSmallBold">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>7</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r0g64b128]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="WORKWEEK_HEADER_VA">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r255g255b255]]></foregroundColor>
+            <backgroundColor><![CDATA[r77g112b184]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="WORKWEEK_DATA_ODD">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Unspecified]]></weight>
+            <foregroundColor></foregroundColor>
+            <backgroundColor><![CDATA[r246g245b247]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="dataEven">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Unspecified]]></weight>
+            <foregroundColor><![CDATA[r0g0b0]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="tableHeader2">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r0g0b0]]></foregroundColor>
+            <backgroundColor><![CDATA[r197g217b241]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="dataGray">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Unspecified]]></weight>
+            <foregroundColor><![CDATA[r162g162b162]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="InvoiecStatusDraft">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r255g255b255]]></foregroundColor>
+            <backgroundColor><![CDATA[r192g192b192]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="InvoiceStatusLate">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r255g255b255]]></foregroundColor>
+            <backgroundColor><![CDATA[r255g0b0]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="InvoiceStatusSent">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r255g255b255]]></foregroundColor>
+            <backgroundColor><![CDATA[r255g128b0]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="InvoiceStatusPaid">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r255g255b255]]></foregroundColor>
+            <backgroundColor><![CDATA[r0g128b0]]></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="errorLabel">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <fontSizeAsPercentage>false</fontSizeAsPercentage>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Unspecified]]></weight>
+            <foregroundColor><![CDATA[r128g128b128]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+    </visualAttributes>
+</entirejFramework>
