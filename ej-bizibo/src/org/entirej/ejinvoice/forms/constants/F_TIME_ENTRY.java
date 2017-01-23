@@ -44,31 +44,34 @@ public class F_TIME_ENTRY
         public static final String I_PROJECT_LABEL            = "projectLabel";
         public static final String I_PROCESS_LABEL            = "processLabel";
         public static final String I_REFRESH_PROJECT_LISTS    = "refreshProjectLists";
+        public static final String LM_CUSTOMER_PROJECTS       = "CustomerProjects";
+        public static final String LM_CUSTOMER_PROJECT_TASKS  = "CustomerProjectTasks";
 
     }
 
     public static class B_TIME_ENTRY
     {
-        public static final String ID                 = "TimeEntry";
-        public static final String I_ID               = "id";
-        public static final String I_COMPANY_ID       = "companyId";
-        public static final String I_START_TIME       = "startTime";
-        public static final String I_END_TIME         = "endTime";
-        public static final String I_WORK_DESCRIPTION = "workDescription";
-        public static final String I_CUPT_ID          = "cuptId";
-        public static final String I_CUPR_ID          = "cuprId";
-        public static final String I_USER_ID          = "userId";
-        public static final String I_WORK_DATE        = "workDate";
-        public static final String I_HOURS_WORKED     = "hoursWorked";
-        public static final String I_PROJECT          = "project";
-        public static final String I_TASK             = "task";
-        public static final String I_START_LABEL      = "startLabel";
-        public static final String I_END_LABEL        = "endLabel";
-        public static final String I_HOURS_LABEL      = "hoursLabel";
-        public static final String I_EQUALS_LABEL     = "equalsLabel";
-        public static final String I__EDIT            = "_edit";
-        public static final String I__DELETE          = "_delete";
-        public static final String I_INVP_ID          = "invpId";
+        public static final String ID                        = "TimeEntry";
+        public static final String I_ID                      = "id";
+        public static final String I_COMPANY_ID              = "companyId";
+        public static final String I_START_TIME              = "startTime";
+        public static final String I_END_TIME                = "endTime";
+        public static final String I_WORK_DESCRIPTION        = "workDescription";
+        public static final String I_CUPT_ID                 = "cuptId";
+        public static final String I_CUPR_ID                 = "cuprId";
+        public static final String I_USER_ID                 = "userId";
+        public static final String I_WORK_DATE               = "workDate";
+        public static final String I_HOURS_WORKED            = "hoursWorked";
+        public static final String I_PROJECT                 = "project";
+        public static final String I_TASK                    = "task";
+        public static final String I_START_LABEL             = "startLabel";
+        public static final String I_END_LABEL               = "endLabel";
+        public static final String I_HOURS_LABEL             = "hoursLabel";
+        public static final String I_EQUALS_LABEL            = "equalsLabel";
+        public static final String I__EDIT                   = "_edit";
+        public static final String I__DELETE                 = "_delete";
+        public static final String I_INVP_ID                 = "invpId";
+        public static final String LM_CUSTOMER_PROJECT_TASKS = "CustomerProjectTasks";
 
     }
 
@@ -278,7 +281,6 @@ public class F_TIME_ENTRY
 
     public static final String AC_ADD_TIME_ENTRY           = "ADD_TIME_ENTRY";
     public static final String AC_DELETE_TIME_ENTRY        = "DELETE_TIME_ENTRY";
-    public static final String AC_EDIT_TIME_ENTRY          = "EDIT_TIME_ENTRY";
     public static final String AC_OPEN_MENU_ITEM           = "OPEN_MENU_ITEM";
     public static final String AC_REFRESH_PROJECT_LISTS    = "REFRESH_PROJECT_LISTS";
 

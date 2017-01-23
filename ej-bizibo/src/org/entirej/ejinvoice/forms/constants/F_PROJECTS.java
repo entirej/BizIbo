@@ -17,6 +17,7 @@ public class F_PROJECTS
         public static final String I_CUSTOMER_ID        = "customerId";
         public static final String I_REFRESH            = "refresh";
         public static final String I_STATUS             = "status";
+        public static final String LM_CUSTOMER_FILTER   = "customerFilter";
 
     }
 
@@ -64,6 +65,8 @@ public class F_PROJECTS
         public static final String I_EDIT                           = "edit";
         public static final String I_TASKS                          = "tasks";
         public static final String I_DISPLAY_TEXT                   = "displayText";
+        public static final String LM_CUSTOMER                      = "Customer";
+        public static final String LM_PROJECT_STATUS                = "projectStatus";
 
     }
 
@@ -105,6 +108,7 @@ public class F_PROJECTS
         public static final String I_SAVE              = "save";
         public static final String I_CANCEL            = "cancel";
         public static final String I_PAGE_TITLE        = "pageTitle";
+        public static final String LM_CUSTOMER         = "customer";
 
     }
 
@@ -137,6 +141,7 @@ public class F_PROJECTS
         public static final String I_TASK_FIX_PRICE    = "taskFixPrice";
         public static final String I_TASK_HOURLY_RATE  = "taskHourlyRate";
         public static final String I_TASK_NOTES        = "taskNotes";
+        public static final String LM_CUSTOMER         = "customer";
 
     }
 

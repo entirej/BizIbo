@@ -43,6 +43,7 @@ public class F_PROJECT_TASKS
         public static final String I_DISPLAY_TEXT_1    = "displayText1";
         public static final String I_DISPLAY_TEXT_2    = "displayText2";
         public static final String I_PRICE             = "price";
+        public static final String LM_TASK_STATUS      = "TaskStatus";
 
     }
 
@@ -92,6 +93,7 @@ public class F_PROJECT_TASKS
         public static final String I_PROJECT_NAME      = "projectName";
         public static final String I_PROJECT_ID_ERROR  = "projectIdError";
         public static final String I_CUSTOMER_NAME     = "customerName";
+        public static final String LM_PAOJECTS         = "paojects";
 
     }
 
