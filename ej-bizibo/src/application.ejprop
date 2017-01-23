@@ -4,6 +4,7 @@
     <applicationManager><![CDATA[org.entirej.applicationframework.rwt.application.EJRWTApplicationManager]]></applicationManager>
     <applicationManagerDefinition><![CDATA[org.entirej.applicationframework.rwt.renderers.application.EJRWTApplicationDefinition]]></applicationManagerDefinition>
     <connectionFactoryClassName><![CDATA[org.entirej.ejinvoice.database.TEMOSJbossConnectionFactory]]></connectionFactoryClassName>
+    <applicationActionProcessor></applicationActionProcessor>
     <reusableBlocksLocation><![CDATA[org/entirej/ejinvoice/referencedblocks]]></reusableBlocksLocation>
     <reusableLovDefinitionLocation><![CDATA[org/entirej/ejinvoice/referencedlovdefs]]></reusableLovDefinitionLocation>
     <objectGroupDefinitionLocation><![CDATA[org/entirej/ejinvoice]]></objectGroupDefinitionLocation>
@@ -15,8 +16,8 @@
         <appicationLevelParameter name="USER_ID" dataType="java.lang.Integer" defaultValue=""></appicationLevelParameter>
         <appicationLevelParameter name="COMPANY_ID" dataType="java.lang.Integer" defaultValue=""></appicationLevelParameter>
         <appicationLevelParameter name="builtBy" dataType="java.lang.String" defaultValue="Built with EntireJ"></appicationLevelParameter>
-        <appicationLevelParameter name="DATABASE_NAME" dataType="java.lang.String" defaultValue="ej-invoice"></appicationLevelParameter>
-        <appicationLevelParameter name="dataSourceName" dataType="java.lang.String" defaultValue="ej-invoice"></appicationLevelParameter>
+        <appicationLevelParameter name="DATABASE_NAME" dataType="java.lang.String" defaultValue="ej-bizibo"></appicationLevelParameter>
+        <appicationLevelParameter name="dataSourceName" dataType="java.lang.String" defaultValue="ej-bizibo"></appicationLevelParameter>
         <appicationLevelParameter name="newCompanyDefaultsCompanyId" dataType="java.lang.Integer" defaultValue="369"></appicationLevelParameter>
     </applicationLevelParameterList>
     <applicationDefinedProperties>
