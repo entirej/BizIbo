@@ -36,7 +36,7 @@ public class LoginActionProcessor extends DefaultFormActionProcessor
         String email = RWT.getSettingStore().getAttribute(ApplicationParameters.PARAM_EMAIL);
         if (email != null)
         {
-            form.getBlock(F_LOGIN.B_LOGON.ID).getScreenItem(EJScreenType.MAIN, F_LOGIN.B_LOGON.I_EMAIL).setValue(email);
+            form.getBlock(F_LOGIN.B_LOGON.ID).getFocusedRecord().setValue(F_LOGIN.B_LOGON.I_EMAIL,email);
         }
     }
 

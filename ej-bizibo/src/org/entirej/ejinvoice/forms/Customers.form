@@ -7,6 +7,7 @@
         <formHeight>520</formHeight>
         <numCols>1</numCols>
         <actionProcessorClassName><![CDATA[org.entirej.ejinvoice.forms.customer.CustomerActionProcessor]]></actionProcessorClassName>
+        <firstNavigableBlock></firstNavigableBlock>
         <formRendererName><![CDATA[Form]]></formRendererName>
         <formParameterList>
             <formParameter name="IN_EDIT_MODE" dataType="java.lang.Boolean" defaultValue=""></formParameter>
@@ -375,8 +376,10 @@
                     <property name="ROW_ODD_VA" multilingual="false" propertyType="VISUAL_ATTRIBUTE"><![CDATA[dataOdd]]></property>
                     <property name="CELL_PADDING" multilingual="false" propertyType="INTEGER"><![CDATA[5]]></property>
                     <property name="SHOW_HEADING" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
+                    <property name="TEXT_SELECTION" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                     <property name="CELL_SPACING" multilingual="false" propertyType="INTEGER"><![CDATA[0]]></property>
                     <property name="HEADER_VA" multilingual="false" propertyType="VISUAL_ATTRIBUTE"><![CDATA[tableHeader]]></property>
+                    <property name="FILTER_KEEP_ON_REFRESH" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                     <propertyList name="ACTIONS">
                     </propertyList>
                 </blockRendererProperties>
@@ -3868,7 +3871,7 @@
                                     <hint></hint>
                                     <editAllowed>true</editAllowed>
                                     <visible>true</visible>
-                                    <mandatory>false</mandatory>
+                                    <mandatory>true</mandatory>
                                     <enableLovNotification>false</enableLovNotification>
                                     <lovMappingName></lovMappingName>
                                     <validateFromLov>true</validateFromLov>
@@ -5369,7 +5372,7 @@
                                     <hint></hint>
                                     <editAllowed>true</editAllowed>
                                     <visible>true</visible>
-                                    <mandatory>false</mandatory>
+                                    <mandatory>true</mandatory>
                                     <enableLovNotification>false</enableLovNotification>
                                     <lovMappingName></lovMappingName>
                                     <validateFromLov>true</validateFromLov>
