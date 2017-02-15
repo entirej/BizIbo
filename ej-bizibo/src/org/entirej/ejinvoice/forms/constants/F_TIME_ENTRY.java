@@ -281,6 +281,7 @@ public class F_TIME_ENTRY
 
     public static final String AC_ADD_TIME_ENTRY           = "ADD_TIME_ENTRY";
     public static final String AC_DELETE_TIME_ENTRY        = "DELETE_TIME_ENTRY";
+    public static final String AC_EDIT_TIME_ENTRY          = "EDIT_TIME_ENTRY";
     public static final String AC_OPEN_MENU_ITEM           = "OPEN_MENU_ITEM";
     public static final String AC_REFRESH_PROJECT_LISTS    = "REFRESH_PROJECT_LISTS";
 

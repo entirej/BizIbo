@@ -16,8 +16,8 @@
         <appicationLevelParameter name="USER_ID" dataType="java.lang.Integer" defaultValue=""></appicationLevelParameter>
         <appicationLevelParameter name="COMPANY_ID" dataType="java.lang.Integer" defaultValue=""></appicationLevelParameter>
         <appicationLevelParameter name="builtBy" dataType="java.lang.String" defaultValue="Built with EntireJ"></appicationLevelParameter>
-        <appicationLevelParameter name="DATABASE_NAME" dataType="java.lang.String" defaultValue="ej-bizibo"></appicationLevelParameter>
-        <appicationLevelParameter name="dataSourceName" dataType="java.lang.String" defaultValue="ej-bizibo"></appicationLevelParameter>
+        <appicationLevelParameter name="DATABASE_NAME" dataType="java.lang.String" defaultValue="bizibo"></appicationLevelParameter>
+        <appicationLevelParameter name="dataSourceName" dataType="java.lang.String" defaultValue="java:/bizibo"></appicationLevelParameter>
         <appicationLevelParameter name="newCompanyDefaultsCompanyId" dataType="java.lang.Integer" defaultValue="369"></appicationLevelParameter>
     </applicationLevelParameterList>
     <applicationDefinedProperties>
@@ -49,12 +49,12 @@
             </propertyGroup>
         </propertyGroup>
         <propertyGroup name="ACTION_GROUP">
-            <property name="KEY_DELETE" multilingual="false" propertyType="STRING"><![CDATA[SHIFT+D]]></property>
-            <property name="KEY_LOV" multilingual="false" propertyType="STRING"><![CDATA[SHIFT+ARROW_DOWN]]></property>
-            <property name="KEY_UPDATE" multilingual="false" propertyType="STRING"><![CDATA[SHIFT+U]]></property>
-            <property name="KEY_QUERY" multilingual="false" propertyType="STRING"><![CDATA[SHIFT+Q]]></property>
-            <property name="KEY_INSERT" multilingual="false" propertyType="STRING"><![CDATA[SHIFT+I]]></property>
-            <property name="KEY_REFRESH" multilingual="false" propertyType="STRING"><![CDATA[SHIFT+R]]></property>
+            <property name="KEY_DELETE" multilingual="false" propertyType="STRING"><![CDATA[CTRL+SHIFT+D]]></property>
+            <property name="KEY_LOV" multilingual="false" propertyType="STRING"><![CDATA[CTRL+SHIFT+ARROW_DOWN]]></property>
+            <property name="KEY_UPDATE" multilingual="false" propertyType="STRING"><![CDATA[CTRL+SHIFT+U]]></property>
+            <property name="KEY_QUERY" multilingual="false" propertyType="STRING"><![CDATA[CTRL+SHIFT+Q]]></property>
+            <property name="KEY_INSERT" multilingual="false" propertyType="STRING"><![CDATA[CTRL+SHIFT+I]]></property>
+            <property name="KEY_REFRESH" multilingual="false" propertyType="STRING"><![CDATA[CTRL+SHIFT+R]]></property>
         </propertyGroup>
     </applicationDefinedProperties>
     <packages>
